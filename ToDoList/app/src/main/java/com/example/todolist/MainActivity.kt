@@ -3,6 +3,7 @@ package com.example.todolist
 import android.app.AlertDialog
 import android.app.Dialog
 import android.content.DialogInterface
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
