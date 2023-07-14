@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/math_equipments"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarId"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/green"
+        android:elevation="4dp"
+        app:title="MATH GAME"
+        app:titleTextColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/additionBtnId"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="ADDITION"
+        android:textSize="24sp"
+        android:layout_marginTop="90dp"/>
+    <Button
+        android:id="@+id/multiplicationBtnId"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="MULTIPLICATION"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/divisionBtnId"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="DIVISION"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

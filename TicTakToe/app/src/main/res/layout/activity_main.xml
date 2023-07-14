@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3">
+        <Button
+            android:onClick="clickFun"
+            android:id="@+id/btn1Id"
+            android:layout_margin="4dp"/>
+        <Button
+            android:onClick="clickFun"
+            android:id="@+id/btn2Id"
+            android:layout_margin="4dp"/>
+        <Button
+            android:onClick="clickFun"
+            android:id="@+id/btn3Id"
+            android:layout_margin="4dp"/>
+        <Button
+            android:onClick="clickFun"
+            android:id="@+id/btn4Id"
+            android:layout_margin="4dp"/>
+        <Button
+            android:onClick="clickFun"
+            android:id="@+id/btn5Id"
+            android:layout_margin="4dp"/>
+        <Button
+            android:onClick="clickFun"
+            android:id="@+id/btn6Id"
+            android:layout_margin="4dp"/>
+        <Button
+            android:onClick="clickFun"
+            android:id="@+id/btn7Id"
+            android:layout_margin="4dp"/>
+        <Button
+            android:onClick="clickFun"
+            android:id="@+id/btn8Id"
+            android:layout_margin="4dp"/>
+        <Button
+            android:onClick="clickFun"
+            android:id="@+id/btn9Id"
+            android:layout_margin="4dp"/>
+
+    </GridLayout>
+
+</LinearLayout>

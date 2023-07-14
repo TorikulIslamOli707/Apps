@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fire_works"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONGRATULATIONS!!"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="400dp"/>
+    <TextView
+        android:id="@+id/finalScoreTxtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Score"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/playAgainBtnId"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="PLAY AGAIN"
+            android:textColor="@color/blue"
+            android:textSize="22sp"
+            android:background="@drawable/button_shape"
+            android:layout_margin="10dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exitBtnId"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape"
+            android:text="EXIT"
+            android:textColor="@color/blue"
+            android:textSize="22sp"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

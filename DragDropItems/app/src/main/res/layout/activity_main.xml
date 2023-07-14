@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nameEdtTxtId"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:inputType="text"
+        android:background="@drawable/edit_shape_box"
+        android:hint="Enter your name"
+        android:paddingLeft="20dp"/>
+    <EditText
+        android:id="@+id/passwordEdtTxtId"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nameEdtTxtId"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edit_shape_box"
+        android:hint="Enter the password"
+        android:paddingLeft="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpBtnId"
+        android:text="SIGN UP"
+        android:textSize="20sp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_shape_box"
+        android:layout_below="@+id/passwordEdtTxtId"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="50dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signInBtnId"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_shape_box"
+        android:text="SIGN IN"
+        android:textSize="20sp"
+        android:layout_below="@+id/passwordEdtTxtId"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"/>
+
+
+
+</RelativeLayout>

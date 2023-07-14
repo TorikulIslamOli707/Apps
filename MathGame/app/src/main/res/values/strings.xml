@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MathGame</string>
+    <string name="score">Score</string>
+    <string name="startingScore">0</string>
+    <string name="life">Life</string>
+    <string name="lifeRemain">3</string>
+    <string name="time">Time</string>
+    <string name="timeLeft">60</string>
+</resources>

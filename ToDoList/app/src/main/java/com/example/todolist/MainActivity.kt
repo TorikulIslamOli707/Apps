@@ -1,6 +1,7 @@
 package com.example.todolist
 
 import android.app.AlertDialog
+import android.app.DatePickerDialog
 import android.app.Dialog
 import android.content.DialogInterface
 import android.graphics.Color
@@ -10,12 +11,15 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ListView
+import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
+import java.util.Calendar
 
 class MainActivity : AppCompatActivity() {
     lateinit var editTxtVar: EditText
     lateinit var addBtnVar: Button
     lateinit var listViewVar: ListView
+    lateinit var selectDateVar: Button
 
     var listAr = ArrayList<String>()
     var helperClassObj = HelperClass()
@@ -31,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         editTxtVar = findViewById(R.id.editTxtId)
         addBtnVar = findViewById(R.id.addBtnId)
         listViewVar = findViewById(R.id.itemListId)
+        selectDateVar = findViewById(R.id.selectDateBtn)
 
         listAr = helperClassObj.readData(this)
 
@@ -62,6 +67,24 @@ class MainActivity : AppCompatActivity() {
             }
 
             alert.create().show()
+
+        }
+
+        selectDateVar.setOnClickListener{
+            val calendarObj = Calendar.getInstance()
+            val year = calendarObj.get(Calendar.YEAR)
+            val month = calendarObj.get(Calendar.MONTH)
+            val day = calendarObj.get(Calendar.DAY_OF_MONTH)
+
+            DatePickerDialog(this,
+                DatePickerDialog.OnDateSetListener{view, year, month, dayOfMonth ->
+                    Toast.makeText(this, "Date Selected", Toast.LENGTH_SHORT).show()
+                },
+                year,
+                month,
+                day
+            ).show()
+
 
         }
     }
